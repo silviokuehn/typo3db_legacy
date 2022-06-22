@@ -167,7 +167,6 @@ class PreparedStatement
      */
     public function __construct($query, $table, array $precompiledQueryParts = [])
     {
-        GeneralUtility::logDeprecatedFunction();
         $this->query = $query;
         $this->precompiledQueryParts = $precompiledQueryParts;
         $this->table = $table;
