@@ -1993,9 +1993,12 @@ class DatabaseConnection
     {
         if (!$this->deprecationWarningThrown) {
             $this->deprecationWarningThrown = true;
-            trigger_error('DatabaseConnection a.k.a. $["TYPO3_DB"] has been marked as deprecated in'
-            . ' TYPO3 v8 and will be removed in TYPO3 v9. Please use the newly available ConnectionPool and QueryBuilder'
-            . ' classes.', E_USER_DEPRECATED);
+            
+            // do nothing.
+            
+            // trigger_error('DatabaseConnection a.k.a. $["TYPO3_DB"] has been marked as deprecated in'
+            // . ' TYPO3 v8 and will be removed in TYPO3 v9. Please use the newly available ConnectionPool and QueryBuilder'
+            // . ' classes.', E_USER_DEPRECATED);
         }
     }
 
